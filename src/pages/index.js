@@ -1,41 +1,42 @@
-// HeroBanner.jsx
+import Link from "next/link";
 
 export default function HeroBanner() {
   return (
     <div>
-      {/* Banner Image Section */}
+      {/* Hero Image Banner with Overlay */}
       <div
-        className="w-full h-[600px] bg-center bg-cover bg-no-repeat flex items-center justify-center"
-        style={{ backgroundImage: "url('/Screenshot_20221207_111257.png')" }} // Ensure bg.jpeg is in /public folder
+        className="w-full h-[600px] bg-center bg-cover bg-no-repeat flex items-center justify-center relative"
+        style={{ backgroundImage: "url('/Screenshot_20221207_111257.png')" }}
       >
-        <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">
+        <div className="absolute inset-0 bg-black bg-opacity-40" /> {/* Optional dark overlay */}
+        <h1 className="text-white text-4xl md:text-5xl font-bold z-10">
           E Supermarket
         </h1>
       </div>
 
       {/* Navigation Buttons */}
-      <nav className="flex justify-center space-x-6">
-          <Link
-            href="/category"
-            className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-md transition"
-          >
-            Category
-          </Link>
+      <nav className="flex justify-center space-x-6 py-6 bg-white shadow-md">
+        <Link
+          href="/category"
+          className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-md transition"
+        >
+          Category
+        </Link>
 
-          <Link
-            href="/register"
-            className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-md transition"
-          >
-            Product Registration
-          </Link>
+        <Link
+          href="/register"
+          className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-md transition"
+        >
+          Product Registration
+        </Link>
 
-          <Link
-            href="/products"
-            className="bg-red-500 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-md transition"
-          >
-            Product Table
-          </Link>
-        </nav>
+        <Link
+          href="/products"
+          className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-md transition"
+        >
+          Product Table
+        </Link>
+      </nav>
     </div>
   );
 }
