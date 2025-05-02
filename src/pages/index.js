@@ -1,30 +1,23 @@
-// pages/index.js
-export default function Home() {
+// HeroBanner.jsx
+
+export default function HeroBanner() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Banner section */}
+    <div>
+      {/* Banner Image Section */}
       <div
-  className="w-full h-[300px] bg-no-repeat bg-cover bg-center flex items-center justify-center"
-  style={{ backgroundImage: "url('/bg.jpeg')" }}
->
-  <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
-    E Supermarket
-  </h1>
-</div>
+        className="w-full h-[400px] bg-center bg-cover bg-no-repeat flex items-center justify-center"
+        style={{ backgroundImage: "url('/bg.jpeg')" }} // Ensure bg.jpeg is in /public folder
+      >
+        <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">
+          E Supermarket
+        </h1>
+      </div>
 
-
-      {/* Navigation bar */}
-      <nav className="bg-red-500 text-white font-semibold text-center py-4">
-        <div className="flex justify-center space-x-6">
-          <a href="#" className="hover:underline">Category</a>
-          <a href="#" className="hover:underline">Product Registration</a>
-          <a href="#" className="hover:underline">Product Table</a>
-        </div>
-      </nav>
-
-      {/* Page Content */}
-      <div className="p-6">
-        <p className="text-center text-gray-600">Welcome to E Supermarket.</p>
+      {/* Navigation Buttons */}
+      <div className="flex justify-center space-x-6 bg-red-500 py-4 shadow-md">
+        <button className="text-white font-semibold hover:underline">Category</button>
+        <button className="text-white font-semibold hover:underline">Product Registration</button>
+        <button className="text-white font-semibold hover:underline">Product Table</button>
       </div>
     </div>
   );
