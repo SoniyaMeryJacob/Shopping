@@ -6,7 +6,7 @@ export default function HeroBanner() {
       {/* Banner Image Section */}
       <div
         className="w-full h-[400px] bg-center bg-cover bg-no-repeat flex items-center justify-center"
-        style={{ backgroundImage: "url('/bg.jpeg')" }} // Ensure bg.jpeg is in /public folder
+        style={{ backgroundImage: "url('/Screenshot_20221207_111257.png')" }} // Ensure bg.jpeg is in /public folder
       >
         <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">
           E Supermarket
