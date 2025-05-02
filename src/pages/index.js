@@ -4,13 +4,14 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100">
       {/* Banner section */}
       <div
-        className="w-full h-[300px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/bg.jpeg')" }}
-      >
-        <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
-          E Supermarket
-        </h1>
-      </div>
+  className="w-full h-[300px] bg-no-repeat bg-cover bg-center flex items-center justify-center"
+  style={{ backgroundImage: "url('/bg.jpeg')" }}
+>
+  <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+    E Supermarket
+  </h1>
+</div>
+
 
       {/* Navigation bar */}
       <nav className="bg-red-500 text-white font-semibold text-center py-4">
