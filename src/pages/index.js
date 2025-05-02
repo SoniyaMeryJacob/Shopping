@@ -4,16 +4,17 @@ export default function HeroBanner() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Image Banner */}
-      <div
-        className="w-full h-[800px] bg-center bg-cover bg-no-repeat flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/menu.jpg')" }}
-      >
-        {/* Optional: Dark overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <h1 className="text-white text-4xl md:text-5xl font-bold z-10">
-          E Supermarket
-        </h1>
-      </div>
+      <div className="w-full h-[800px] bg-center bg-cover bg-no-repeat flex items-center justify-center relative"
+     style={{ backgroundImage: "url('/menu.jpg')" }}>
+  {/* Dark overlay with explicit z-index */}
+  <div className="absolute inset-0 bg-black bg-opacity-40 z-0" />
+  
+  {/* Heading with higher z-index */}
+  <h1 className="text-white text-4xl md:text-5xl font-bold z-10">
+    E Supermarket
+  </h1>
+</div>
+
 
       {/* Navigation Buttons */}
       <nav className="flex justify-center space-x-6 py-10">
