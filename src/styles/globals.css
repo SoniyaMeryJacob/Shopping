@@ -13,7 +13,10 @@ body {
   background-attachment: fixed; /* Optional: for a parallax-like effect */
 }
 
-
+h2 {
+  text-align: center;
+  color: #fff;
+}
 
 h1 {
   text-align: center;
