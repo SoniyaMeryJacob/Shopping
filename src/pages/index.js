@@ -5,10 +5,11 @@ export default function HeroBanner() {
     <div className="bg-white min-h-screen">
       {/* Hero Image Banner */}
       <div
-        className="w-full h-[600px] bg-center bg-cover bg-no-repeat flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/download.jpeg')" }}
+        className="w-full h-screen bg-center bg-cover bg-no-repeat flex items-center justify-center relative"
+        style={{ backgroundImage: "url('/Screenshot_20221207_111257.png')" }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40" /> {/* Optional overlay */}
+        {/* Optional: Dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black bg-opacity-40" />
         <h1 className="text-white text-4xl md:text-5xl font-bold z-10">
           E Supermarket
         </h1>
