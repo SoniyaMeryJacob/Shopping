@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="container">
-    <h1 style={{ color: 'white' }}>E Supermarket</h1>
+    <div>
+    <h1>E Supermarket</h1>
       <nav>
         <Link href="/category">Category</Link>
         <Link href="/register">Product Registration</Link>
