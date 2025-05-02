@@ -7,7 +7,6 @@ export default function Home() {
       <img
   src="/bg.jpeg"
   alt="Supermarket"
-  className="w-full max-h-96 object-contain mx-auto rounded-md mb-6"
 />
       <h1>E Supermarket</h1>
       <nav>
