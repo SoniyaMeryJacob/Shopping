@@ -1,13 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
       <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-3xl text-center">
-      <img
+      <Image
   src="/bg.jpeg"
   alt="Supermarket"
-  className="w-full max-h-96 object-contain mx-auto rounded-md mb-6"
+  width={800}
+  height={400}
+  className="rounded-md mb-6 mx-auto"
 />
         <h1 className="text-4xl font-bold text-gray-800 mb-6">E Supermarket</h1>
         <nav className="flex justify-center space-x-6">
