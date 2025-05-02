@@ -1,12 +1,18 @@
-body { 
-  font-family: Arial, sans-serif;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background-image: url('/menu.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Optional: for a parallax-like effect */
 }
+
 
 
 h1 {
