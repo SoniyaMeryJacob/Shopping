@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link"; // Import Link for navigation
 
 export default function Category() {
   const [name, setName] = useState("");
@@ -18,9 +19,16 @@ export default function Category() {
       alert("Error adding category!");
     }
   };
+
   return (
     <div className="container">
       <h1>Add a New Category</h1>
+
+      {/* Link to homepage */}
+      <Link href="/" style={{ textDecoration: "underline", marginBottom: "1rem", display: "inline-block" }}>
+        Go to Homepage
+      </Link>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
