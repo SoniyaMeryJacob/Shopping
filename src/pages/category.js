@@ -23,15 +23,16 @@ export default function Category() {
   return (
     <div className="relative min-h-screen bg-gray-100 flex items-center justify-center">
       
-      {/* 🏠 Home Button fixed at top-left */}
-      <Link href="/">
-        <button className="absolute top-4 left-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md">
-          🏠 Home
-        </button>
-      </Link>
-
+    {/* 🏠 Home Button fixed at top-left */}
+    <Link href="/">
+      <button className="absolute top-4 left-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md">
+        🏠 Home
+      </button>
+    </Link>
+    <div className="container mx-auto p-4 flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md text-center">
         <h1 className="text-2xl font-bold mb-6">Add a New Category</h1>
+
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
@@ -49,6 +50,7 @@ export default function Category() {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 }
