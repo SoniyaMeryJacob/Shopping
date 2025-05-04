@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -55,6 +56,14 @@ export default function Products() {
   if (error) return <div>Error: {error}</div>;
 
   return (
+    <div className="relative min-h-screen bg-gray-100 flex items-center justify-center">
+      
+    {/* 🏠 Home Button fixed at top-left */}
+    <Link href="/">
+      <button className="absolute top-4 left-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md">
+        🏠 Home
+      </button>
+    </Link>
     <div className="container">
       <h1>Product Table</h1>
       <table>
@@ -80,6 +89,7 @@ export default function Products() {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   );
 }

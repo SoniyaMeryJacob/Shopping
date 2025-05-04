@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -49,6 +50,14 @@ export default function Register() {
   };
 
   return (
+    <div className="relative min-h-screen bg-gray-100 flex items-center justify-center">
+      
+    {/* 🏠 Home Button fixed at top-left */}
+    <Link href="/">
+      <button className="absolute top-4 left-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md">
+        🏠 Home
+      </button>
+    </Link>
     <div style={styles.container}>
       <h1 style={styles.header}>Register a New Product</h1>
       <form onSubmit={handleSubmit} style={styles.form}>
@@ -82,6 +91,7 @@ export default function Register() {
           Register Product
         </button>
       </form>
+    </div>
     </div>
   );
 }
