@@ -21,22 +21,17 @@ export default function Category() {
   };
 
   return (
-    <div className="container mx-auto p-4 flex flex-col items-center justify-center min-h-screen bg-gray-100">
-              {/* Home Button */}
-              <Link href="/">
-          <button className="mb-6 px-4 py-2 bg-black-600 text-white rounded-full shadow-md transition duration-200">
-            🏠 Home
-          </button>
-        </Link>
+    <div className="relative min-h-screen bg-gray-100 flex items-center justify-center">
+      
+      {/* 🏠 Home Button fixed at top-left */}
+      <Link href="/">
+        <button className="absolute top-4 left-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md">
+          🏠 Home
+        </button>
+      </Link>
+
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md text-center">
         <h1 className="text-2xl font-bold mb-6">Add a New Category</h1>
-
-        {/* Home Button */}
-        <Link href="/">
-          <button className="mb-6 px-4 py-2 bg-black-600 text-white rounded-full shadow-md transition duration-200">
-            🏠 Home
-          </button>
-        </Link>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
