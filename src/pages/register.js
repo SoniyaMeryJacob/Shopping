@@ -54,7 +54,7 @@ export default function Register() {
       
     {/* 🏠 Home Button fixed at top-left */}
     <Link href="/">
-      <button className="absolute">
+      <button className="color">
         🏠 Home
       </button>
     </Link>
@@ -133,5 +133,10 @@ const styles = {
   },
   submitButtonHover: {
     backgroundColor: "#45a049",
+  },
+  color: {
+    position: "absolute",
+    backgroundColor: "#000",
+    color: "#fff",
   },
 };
