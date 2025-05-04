@@ -54,7 +54,7 @@ export default function Register() {
       
     {/* 🏠 Home Button fixed at top-left */}
     <Link href="/">
-      <button className="absolute top-4 left-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-md">
+      <button className="absolute">
         🏠 Home
       </button>
     </Link>
